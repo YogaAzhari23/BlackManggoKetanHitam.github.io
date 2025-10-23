@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Delight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="logo">Black Manggo Ketan Hitam</div>
+    
+    <!-- Tombol hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <!-- Menu utama -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#menu">Varian Rasa</a></li>
+      <li><a href="#order">Pemesanan</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+  
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay">
+            <img src="img/Logo.jpeg" alt="Logo Dessert Delight" class="hero-logo">
+        <h1>Black Manggo Ketan Hitam, Pud & Dessert</h1>
+        <p>Manisnya kebahagiaan di setiap gigitan 
+
+            Dessert segar dengan berbagai varian rasa buah pilihan, dibuat dari bahan alami.!</p>
+        <a href="#menu" class="btn">Lihat Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- About Section -->
+<section id="about" class="about">
+    <h1>Tentang Kami</h1>
+    <p>Dessert Black Manggo Ketan Hitam menghadirkan dessert modern dengan rasa autentik dan bahan berkualitas. Cocok untuk semua usia dan momen spesial Anda.</p>
+    
+    <div class="about-cards">
+        <div class="about-card">
+            <img src="img/Tuang susu1.jpeg" alt="Foto Founder">
+            <p>Diproses dari bahan segar pilihan.</p>
+        </div>
+        <div class="about-card">
+            <img src="img/Cup Logo samping.jpeg" alt="Foto Chef">
+            
+            <p>Sentuhan manis dari gula alami.</p>
+        </div>
+        <div class="about-card">
+            <img src="img/FT5.jpeg" alt="Tim Dessert Delight">
+            
+            <p>Tekstur lembut yang menggoda lidah.</p>
+        </div>
+        <div class="about-card">
+          <img src="img/cp2.png" alt="Tim Dessert Delight">
+          
+          <p>Dihias dengan cinta di setiap lapisan.</p>
+      </div>
+      <div class="about-card">
+        <img src="img/cp3.png" alt="Tim Dessert Delight">
+        
+        <p>Kelezatan yang lahir dari kesabaran.</p>
+    </div>
+    <div class="about-card">
+      <img src="img/cp.png" alt="Tim Dessert Delight">
+      
+      <p>Kombinasi sempurna antara rasa dan seni.</p>
+  </div>
+  <div class="about-card">
+    <img src="img/FT2.jpeg" alt="Tim Dessert Delight">
+    
+    <p>Manisnya tak berlebihan, pas di hati.</p>
+</div>
+<div class="about-card">
+  <img src="img/FT9.jpeg" alt="Tim Dessert Delight">
+  
+  <p>Setiap gigitan penuh kehangatan.</p>
+</div>
+    </div>
+</section>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h1>Varian Rasa</h1>
+        <div class="cards">
+            <div class="card" style="--hover-color:#FFC107;">
+                <img src="img/Cup rasa Mangga.jpeg" alt="Mango Delight">
+                <h3>Mangga</h3>
+                <p>Perpaduan mangga segar dan krim manis yang lembut.</p>
+                <p class="price">Rp5.000/Cup</p>
+            </div>
+            <div class="card" style="--hover-color:#FF0033;">
+                <img src="img/Cup rasa Strbri.jpeg" alt="Mango Delight">
+                <h3>Strawberry</h3>
+                <p>Rasa stroberi alami dengan tekstur creamy yang lezat.</p>
+                <p class="price">Rp5.000/Cup</p>
+            </div>
+            <div class="card" style="--hover-color:#FFC0CB;">
+                <img src="img/Cup rasa Semngka.jpeg" alt="Mango Delight">
+                <h3>Semangka</h3>
+                <p>Segar dan manis alami, cocok untuk pelepas dahaga..</p>
+                <p class="price">Rp5.000/Cup</p>
+            </div>
+            <div class="card" style="--hover-color:#C51077;">
+                <img src="img/Cup rasa Buah Naga.jpeg" alt="Mango Delight">
+                <h3>Buah Naga</h3>
+                <p>eksotis dan lembut di mulut, warna ungu alami yang menggoda.</p>
+                <p class="price">Rp5.000/Cup</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+      <h1>Pemesanan</h1>
+      <p>Isi form di bawah ini untuk memesan dessert favorit Anda!</p>
+    
+      <form class="order-form" id="waForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+    
+        <label for="phone">Nomor WhatsApp:</label>
+        <input type="text" id="phone" name="phone" placeholder="Contoh: 6281234567890" required>
+    
+        <label for="dessert">Varian Dessert:</label>
+        <select id="dessert" name="dessert" required>
+          <option value="">Pilih dessert</option>
+          <option value="Dessert Mangga">Dessert Mangga</option>
+          <option value="Dessert Strawberry">Dessert Strawberry</option>
+          <option value="Dessert Buah Naga">Dessert Buah Naga</option>
+          <option value="Dessert Semangka">Dessert Semangka</option>
+        </select>
+    
+        <label for="quantity">Jumlah:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+    
+        <label for="note">Catatan / Permintaan Khusus:</label>
+        <textarea id="note" name="note" rows="3" placeholder="Tuliskan permintaan khusus"></textarea>
+    
+        <button type="submit" class="btn">Pesan via WhatsApp</button>
+      </form>
+    </section>
+      
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>Kontak Kami</h1>
+  <p>Hubungi kami melalui media sosial di bawah ini:</p>
+
+  <div class="social-icons">
+    <a href="https://wa.me/6282184730255" target="_blank" class="icon whatsapp" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/namatoko_kamu" target="_blank" class="icon instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@namatoko_kamu" target="_blank" class="icon tiktok" title="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    
+  </div>
+</section>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Black Manggo Ketan Hitam. All Rights Reserved.</p>
+    </footer>
+<!-- letakkan script di luar section -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('waForm');
+    const waNumber = '6282184730255'; // nomor WhatsApp toko (format internasional, tanpa +)
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const dessert = document.getElementById('dessert').value.trim();
+      const quantity = document.getElementById('quantity').value.trim();
+      const note = document.getElementById('note').value.trim();
+
+      if (!name || !phone || !dessert || !quantity) {
+        alert('Harap isi semua data yang wajib diisi!');
+        return;
+      }
+
+      const message =
+`🍨 *PESANAN DESSERT* 🍨
+
+Nama: ${name}
+No. WhatsApp: ${phone}
+Varian: ${dessert}
+Jumlah: ${quantity}
+Catatan: ${note || '-'}
+
+Terima kasih! ❤️`;
+
+      // gunakan encodeURIComponent agar teks aman dikirim ke URL
+      const url = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank'); // buka WhatsApp di tab baru
+    });
+  });
+</script>
+
+    
+        
+</body>
+</html>
