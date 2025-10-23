@@ -38,41 +38,95 @@ h1, h2, h3, h4, h5 {
     color: #555;
   }
 
-    
-
-/* Navbar */
-.navbar {
+    /* ==== NAVBAR DASAR ==== */
+header {
+    width: 100%;
+    background-color: #2e2a2a; /* warna gelap elegan */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 60px;
-    background-color: #FFCDD2;
-   
+  }
+  
+  .logo {
     font-family: 'Pacifico', cursive;
-}
-
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #880E4F;
-}
-
-.nav-links {
+    color: #ffd6e0;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 30px;
-}
-
-.nav-links li a {
+  }
+  
+  .nav-links li a {
     text-decoration: none;
-    color: #880E4F;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-    color: #FF4081;
-}
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffb6c1;
+  }
+  
+  /* ==== HAMBURGER ==== */
+  .menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #ffd6e0;
+    cursor: pointer;
+  }
+  
+  /* ==== RESPONSIF UNTUK HP ==== */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 25px;
+    }
+  
+    /* tampilkan hanya tombol garis tiga */
+    .menu-toggle {
+      display: block;
+    }
+  
+    /* sembunyikan navbar kanan atas */
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #2e2a2a;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 25px 0;
+      border-top: 1px solid #444;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+  
+    /* saat hamburger diklik, munculkan menu */
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li a {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+  }
+  
 
 
 
