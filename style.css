@@ -58,8 +58,9 @@ header {
   
   .logo {
     font-family: 'Pacifico', cursive;
-    color: #ffd6e0;
+    color: #ffffff;
     font-size: 1.6rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 1px;
   }
   
